@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitPerTe</title>
+    <style>
+        body {
+            background-image: url('palestra.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: white;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            padding: 15px 30px;
+            width: 97%;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            border-radius: 0 0 20px 20px;
+        }
+
+        .header img {
+            margin-right: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: black;
+        }
+
+        .header p {
+            margin-top: 5px;
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        .nav-links {
+            margin-right: 30px;
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            font-size: 1em;
+            color: black;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+
+        .nav-links a:hover {
+            background-color: greenyellow;
+        }
+
+        .section {
+            padding: 100px 20px;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .section p {
+            font-size: 1.2em;
+            color: white;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        /* Box container con flex */
+        .services {
+            display: flex;
+            justify-content: center;
+            gap: 40px; /* Maggiore spazio tra le box */
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        /* Stile per ogni singola box */
+        .service_t,
+        .service_a,
+        .service_d,
+        .service_abbonati {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 250px;
+            transition: transform 0.2s;
+            text-decoration: none;
+            margin-bottom: 30px; /* Maggiore spazio tra le box verticalmente */
+            text-align: center;
+        }
+
+        .service_t h3,
+        .service_a h3,
+        .service_d h3,
+        .service_abbonati h3 {
+            color: black;
+            font-size: 1.5em;
+        }
+
+        .service_t p,
+        .service_a p,
+        .service_d p,
+        .service_abbonati p {
+            color: black;
+            font-size: 1.1em;
+        }
+
+        /* Effetto hover per le box */
+        .service_t:hover,
+        .service_a:hover,
+        .service_d:hover,
+        .service_abbonati:hover {
+            transform: translateY(-5px);
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-links {
+                margin-top: 10px;
+                margin-right: 0;
+            }
+
+            .service_t,
+            .service_a,
+            .service_d,
+            .service_abbonati {
+                width: 90%; /* Le box si adattano meglio su schermi piccoli */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div style="display: flex; align-items: center;">
+            <img src="logo sito web.jpg" alt="Logo FitPerTe" height="70">
+            <div>
+                <h1>FitPerTe</h1>
+                <p>Il tuo successo guidato da noi</p>
+            </div>
+        </div>
+
+        <div class="nav-links">
+            <a href="#about-us">Chi Siamo</a>
+            <a href="#services">Servizi</a>
+            <a href="Abbonati.html">Abbonati</a>
+        </div>
+    </div>
+
+    <div class="section" id="services">
+        <h2>Trasforma i tuoi sogni in realtà</h2>
+        <div class="services">
+            <div class="service_t">
+                <h3>Training day</h3>
+                <p>Scegli tu il giorno, noi ti diciamo solo come allenarti.</p>
+            </div>
+            <a href="https://chat.whatsapp.com/IwKRSEzYnll8C8uSs176IN" target="_blank" class="service" style="text-decoration: none;">
+                <div class="service_a">
+                    <h3>Allenamenti di Gruppo</h3>
+                    <p>Entra nel nostro gruppo WhatsApp per allenarti in compagnia e mostrare i tuoi risultati.</p>
+                </div>
+            </a>
+            <div class="service_d">
+            <a href="dieta.html" style="text-decoration: none;">
+                <h3>Dietologia</h3>
+                <p>Supporto esperto per una dieta equilibrata e sana da abbinare con l'allenamento.</p>
+            </a>
+        </div>
+            <!-- Box aggiunta per gli Abbonati -->
+            <div class="service_abbonati">
+                <h3>Abbonati</h3>
+                <p>Scopri i nostri pacchetti di abbonamento e scegli il piano che fa per te!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="about-us">
+        <h2>

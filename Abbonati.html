@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abbonamento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .subscription-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .subscription-card h2 {
+            text-align: center;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        .subscription-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .subscription-card ul li {
+            font-size: 16px;
+            color: gray;
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .subscription-card ul li:before {
+            content: "✔";
+            color:cadetblue;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .subscription-card hr {
+            border: 0;
+            border-top: 1px solid #ddd;
+            margin: 20px 0;
+        }
+
+        .subscription-card input,
+        .subscription-card select {
+            width: calc(100% - 10px);
+            margin-bottom: 15px;
+            padding: 8px 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .subscription-card .price-button {
+            background-color: #007bff;
+            color: #fff;
+            font-size: 18px;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            width: 100%;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .subscription-card .price-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="subscription-card">
+        <h2>Abbonamento Mensile</h2>
+        <form name="f1" id="mod1" method="post" action="esegui.php">
+            <label for="nome">Nome</label><br>
+            <input type="text" id="nome" name="nome" placeholder="Inserisci il nome"><br>
+
+            <label for="cognome">Cognome</label><br>
+            <input type="text" id="cognome" name="cognome" placeholder="Inserisci il cognome"><br>
+
+            <label for="eta">Età</label><br>
+            <input type="number" id="eta" name="eta" placeholder="Inserisci la tua età"><br>
+
+            <label for="sesso">Sesso</label><br>
+            <select name="sesso" id="sesso">
+                <option value="Uomo">Uomo</option>
+                <option value="Donna">Donna</option>
+            </select><br>
+        </form>
+        <hr>
+        <ul>
+            <li>Chat disponibile 24h/7</li>
+            <li>Diete e allenamenti esclusivi e personalizzati</li>
+            <li>Consigli sullo svolgimento degli esercizi</li>
+        </ul>
+        <button class="price-button">5.99€</button>
+    </div>
+</body>
+
+</html>

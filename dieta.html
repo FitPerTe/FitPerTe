@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitPerTe - Dieta Settimanale</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            text-align: center;
+            padding: 20px;
+            color: #004d40;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            padding: 15px 30px;
+            width: 93%;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            border-radius: 0 0 20px 20px;
+            flex-wrap: wrap; /* Permette di andare a capo se lo spazio è ridotto */
+        }
+        .header img {
+            margin-right: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: black;
+        }
+        .nav-links {
+            margin-right: 30px;
+            display: flex;
+            gap: 30px;*/
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-size: 1em;
+            color: black;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+        .nav-links a:hover {
+            background-color: greenyellow;
+        }
+        table {
+            width: 80%;
+            margin: 100px auto 20px auto;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        th, td {
+            border: 1px solid #81c784;
+            padding: 15px;
+            text-align: center;
+        }
+        th {
+            background-color: #00796b;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #e8f5e9;
+        }
+        tr:nth-child(odd) {
+            background-color: #c8e6c9;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column; /* Disposizione verticale della barra di navigazione */
+                align-items: flex-start; /* Allinea a sinistra */
+            }
+            .nav-links {
+                margin-top: 10px;
+                margin-right: 0;
+                justify-content: flex-start; /* Allinea i link a sinistra sui dispositivi mobili */
+            }
+            .nav-links a {
+                font-size: 0.9em; /* Riduce la dimensione dei link sui dispositivi mobili */
+                padding: 8px 12px; /* Riduce anche la spaziatura sui dispositivi mobili */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div style="display: flex; align-items: center;">
+            <img src="logo sito web.jpg" alt="Logo FitPerTe" height="70">
+            <div>
+                <h1>FitPerTe</h1>
+                <p>Il tuo successo guidato da noi</p>
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="FitPerTe.html">Home</a>
+            <a href="Abbonati.html">Abbonati</a>
+        </div>
+    </div>
+
+    <h1>Dieta Settimanale</h1>
+    <table>
+        <tr>
+            <th>Giorno</th>
+            <th>Colazione</th>
+            <th>Pranzo</th>
+            <th>Cena</th>
+        </tr>
+        <tr>
+            <td>Lunedì</td>
+            <td>Yogurt e cereali</td>
+            <td>Insalata di pollo</td>
+            <td>Pesce al forno con verdure</td>
+        </tr>
+        <tr>
+            <td>Martedì</td>
+            <td>Frutta e fette biscottate</td>
+            <td>Pasta integrale con pomodoro</td>
+            <td>Carne ai ferri con insalata</td>
+        </tr>
+        <tr>
+            <td>Mercoledì</td>
+            <td>Porridge d'avena</td>
+            <td>Riso con verdure</td>
+            <td>Omelette con spinaci</td>
+        </tr>
+        <tr>
+            <td>Giovedì</td>
+            <td>Pane e marmellata</td>
+            <td>Quinoa con ceci e verdure</td>
+            <td>Pollo arrosto con patate</td>
+        </tr>
+        <tr>
+            <td>Venerdì</td>
+            <td>Latte e biscotti</td>
+            <td>Pasta al pesto</td>
+            <td>Filetto di salmone con riso</td>
+        </tr>
+        <tr>
+            <td>Sabato</td>
+            <td>Toast e spremuta</td>
+            <td>Insalata di tonno e mais</td>
+            <td>Pizza fatta in casa</td>
+        </tr>
+    </table>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const dietologiaBox = document.querySelector(".dietologia-box");
+            if (dietologiaBox) {
+                dietologiaBox.addEventListener("click", function() {
+                    window.location.href = "dieta.html";
+                });
+            }
+        });
+    </script>
+</body>
+</html>
