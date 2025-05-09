@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitPerTe - Allenamento Settimanale</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f8e9;
+            text-align: center;
+            padding: 20px;
+            color: #1b5e20;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            padding: 15px 30px;
+            width: 93%;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            border-radius: 0 0 20px 20px;
+            flex-wrap: wrap;
+        }
+
+        .header img {
+            margin-right: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: black;
+        }
+
+        .nav-links {
+            margin-right: 30px;
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            font-size: 1em;
+            color: black;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+
+        .nav-links a:hover {
+            background-color: greenyellow;
+        }
+
+        table {
+            width: 90%;
+            margin: 100px auto 20px auto;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            border: 1px solid #aed581;
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #558b2f;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dcedc8;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #c5e1a5;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-links {
+                margin-top: 10px;
+                margin-right: 0;
+                justify-content: flex-start;
+            }
+
+            .nav-links a {
+                font-size: 0.9em;
+                padding: 8px 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div style="display: flex; align-items: center;">
+            <img src="logo sito web.jpg" alt="Logo FitPerTe" height="70">
+            <div>
+                <h1>FitPerTe</h1>
+                <p>Il tuo successo guidato da noi</p>
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="FitPerTe.html">Home</a>
+            <a href="Abbonati.html">Abbonati</a>
+        </div>
+    </div>
+
+    <h1>Allenamento Settimanale</h1>
+    <table>
+        <tr>
+            <th>Giorno</th>
+            <th>Gruppo Muscolare</th>
+            <th>Esercizi</th>
+            <th>Ripetizioni</th>
+            <th>Serie</th>
+        </tr>
+        <tr>
+            <td>Lunedì</td>
+            <td>Parte Inferiore (Gambe, Glutei)</td>
+            <td>Squat, Affondi, Crunch</td>
+            <td>15, 12, 20</td>
+            <td>3, 3, 3</td>
+        </tr>
+        <tr>
+            <td>Martedì</td>
+            <td>Parte Superiore (Petto, Tricipiti)</td>
+            <td>Corsa (HIIT), Plank, Mountain Climbers</td>
+            <td>30 sec, 60 sec, 20</td>
+            <td>4, 3, 3</td>
+        </tr>
+        <tr>
+            <td>Mercoledì</td>
+            <td>Parte Superiore (Spalle, Bicipiti)</td>
+            <td>Push-up, Squat Jump, Russian Twist</td>
+            <td>12, 10, 30</td>
+            <td>3, 3, 3</td>
+        </tr>
+        <tr>
+            <td>Giovedì</td>
+            <td>Parte Inferiore (Gambe, Glutei)</td>
+            <td>Deadlift (manubri), Affondi Laterali, Addominali Bicicletta</td>
+            <td>10, 12, 40</td>
+            <td>4, 3, 3</td>
+        </tr>
+        <tr>
+            <td>Venerdì</td>
+            <td>Cardio & Core</td>
+            <td>Burpees, Squat con salto, Side Plank</td>
+            <td>12, 10, 30 sec</td>
+            <td>3, 3, 2 per lato</td>
+        </tr>
+        <tr>
+            <td>Sabato</td>
+            <td>Cardio e Core</td>
+            <td>Corsa leggera, Stretching, Addominali</td>
+            <td>20 min, 10 min, 20</td>
+            <td>1, 1, 3</td>
+        </tr>
+    </table>
+</body>
+
+</html>
