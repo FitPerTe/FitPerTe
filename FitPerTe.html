@@ -86,20 +86,16 @@
             line-height: 1.5;
         }
 
-        /* Box container con flex */
         .services {
             display: flex;
             justify-content: center;
-            gap: 40px; /* Maggiore spazio tra le box */
+            gap: 40px;
             flex-wrap: wrap;
             margin-top: 20px;
         }
 
-        /* Stile per ogni singola box */
-        .service_t,
-        .service_a,
-        .service_d,
-        .service_abbonati {
+        .service {
+            height: 180px;
             background-color: white;
             border-radius: 10px;
             padding: 30px;
@@ -107,31 +103,23 @@
             width: 250px;
             transition: transform 0.2s;
             text-decoration: none;
-            margin-bottom: 30px; /* Maggiore spazio tra le box verticalmente */
+            margin-bottom: 30px;
             text-align: center;
+            display: block;
+            color: black;
         }
 
-        .service_t h3,
-        .service_a h3,
-        .service_d h3,
-        .service_abbonati h3 {
-            color: black;
+        .service h3 {
             font-size: 1.5em;
+            margin-bottom: 10px;
         }
 
-        .service_t p,
-        .service_a p,
-        .service_d p,
-        .service_abbonati p {
-            color: black;
+        .service p {
             font-size: 1.1em;
+            color: black;
         }
 
-        /* Effetto hover per le box */
-        .service_t:hover,
-        .service_a:hover,
-        .service_d:hover,
-        .service_abbonati:hover {
+        .service:hover {
             transform: translateY(-5px);
         }
 
@@ -146,11 +134,8 @@
                 margin-right: 0;
             }
 
-            .service_t,
-            .service_a,
-            .service_d,
-            .service_abbonati {
-                width: 90%; /* Le box si adattano meglio su schermi piccoli */
+            .service {
+                width: 90%;
             }
         }
     </style>
@@ -165,7 +150,6 @@
                 <p>Il tuo successo guidato da noi</p>
             </div>
         </div>
-
         <div class="nav-links">
             <a href="#about-us">Chi Siamo</a>
             <a href="#services">Servizi</a>
@@ -176,29 +160,40 @@
     <div class="section" id="services">
         <h2>Trasforma i tuoi sogni in realtà</h2>
         <div class="services">
-            <div class="service_t">
-                <h3>Training day</h3>
-                <p>Scegli tu il giorno, noi ti diciamo solo come allenarti.</p>
-            </div>
-            <a href="https://chat.whatsapp.com/IwKRSEzYnll8C8uSs176IN" target="_blank" class="service" style="text-decoration: none;">
-                <div class="service_a">
-                    <h3>Allenamenti di Gruppo</h3>
-                    <p>Entra nel nostro gruppo WhatsApp per allenarti in compagnia e mostrare i tuoi risultati.</p>
+            <a href="allenamento.html" class="service">
+                <div>
+                    <h3>Training day</h3>
+                    <p>Scegli tu il giorno, noi ti diciamo solo come allenarti.</p>
                 </div>
             </a>
-            <div class="service_d">
-            <a href="dieta.html" style="text-decoration: none;">
-                <h3>Dietologia</h3>
-                <p>Supporto esperto per una dieta equilibrata e sana da abbinare con l'allenamento.</p>
+
+            <a href="https://chat.whatsapp.com/IwKRSEzYnll8C8uSs176IN" class="service" target="_blank">
+                <div>
+                    <h3>Allenamenti di Gruppo</h3>
+                    <p>Allenati in compagnia e condividi i tuoi risultati.</p>
+                </div>
             </a>
-        </div>
-            <!-- Box aggiunta per gli Abbonati -->
-            <div class="service_abbonati">
-                <h3>Abbonati</h3>
-                <p>Scopri i nostri pacchetti di abbonamento e scegli il piano che fa per te!</p>
-            </div>
+
+            <a href="dieta.html" class="service">
+                <div>
+                    <h3>Dietologia</h3>
+                    <p>Supporto esperto per una dieta sana abbinata all’allenamento.</p>
+                </div>
+            </a>
+
+            <a href="Abbonati.html" class="service">
+                <div>
+                    <h3>Abbonati</h3>
+                    <p>Scopri i pacchetti di abbonamento e trova il piano ideale.</p>
+                </div>
+            </a>
         </div>
     </div>
 
     <div class="section" id="about-us">
-        <h2>
+        <h2>Chi Siamo</h2>
+        <p>Sono un ragazzo di 18 anni con la passione per l'informatica e il fitness... e sono sicuro che FitPerTe è la tua guida per raggiungere obiettivi di benessere e forma fisica attraverso allenamenti mirati e un'alimentazione bilanciata.</p>
+    </div>
+</body>
+
+</html>
